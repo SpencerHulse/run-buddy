@@ -55,7 +55,7 @@ header nav ul li a {
 
 /* Hero Style Start */
 .hero {
-    background-image: url(/assets/images/hero-bg.jpg);
+    background-image: url(../images/hero-bg.jpg);
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -69,8 +69,8 @@ header nav ul li a {
     color: #024e76;
     border: solid 3px #024e76;
     position: absolute;
-    right: 120px;
-    bottom: 140px;
+    right: 140px;
+    bottom: 120px;
 }
 
 .hero-form h3 {
