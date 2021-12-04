@@ -10,13 +10,11 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
-/* Body Style End */
 
 /* Section Style Start */
 section {
     padding: 60px;
 }
-/* Section Style End */
 
 /* Header Style Start */
 header {
@@ -51,7 +49,6 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
-/* Header Style End */
 
 /* Hero Style Start */
 .hero {
@@ -103,21 +100,28 @@ header nav ul li a {
     width: 100%;
     margin-bottom: 15px;
 }
-/* Hero Style End */
 
-/* What We Do Style Start */
-.intro {
-    text-align: center;
-}
-
-.intro h2 {
+/* general section style start */
+.section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color: #fce138;
     display: inline-block;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+/* What We Do Style Start */
+.intro {
+    text-align: center;
 }
 
 .intro p{
@@ -127,7 +131,36 @@ header nav ul li a {
     font-size: 20px;
     margin: 0 auto;
 }
-/* What We Do Style End */
+
+/* What You Do Style Start */
+.steps {
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span {
+    font-size: 38px;
+}
 
 /* Footer Style Start */
 footer {
@@ -152,4 +185,3 @@ footer div {
 footer a {
     color: #024e76;
 }
-/* Footer Style End */
