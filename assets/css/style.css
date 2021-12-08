@@ -5,9 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 /* Generic Style Start */
 body {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +25,7 @@ section {
 /* Header Style Start */
 header {
     padding: 20px 35px;
-    background: #39a6b2;
+    background: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -67,7 +74,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background: #fce138;
-    color: #024e76;
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -106,8 +113,8 @@ header nav ul li a:hover {
     padding: 20px;
     width: 40%;
     margin: 3.5%;
-    color: #024e76;
-    border: solid 3px #024e76;
+    color: var(--secondary-color);
+    border: solid 3px var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
@@ -127,7 +134,7 @@ header nav ul li a:hover {
 
 .hero-form button {
     color: #fce138;
-    background-color: #024e76;
+    background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -135,15 +142,15 @@ header nav ul li a:hover {
 }
 
 .hero-form button:hover {
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
 }
 
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -171,7 +178,7 @@ header nav ul li a:hover {
     height: 20px;
     width: 20px;
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     position: absolute;
     top: -4px;
     left: -30px;
@@ -186,19 +193,19 @@ header nav ul li a:hover {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #024e76;
+    background-color: var(--secondary-color);
     position: absolute;
     left: -29px;
     top: -3px;
-    background-image: radial-gradient(circle, #39a6b2, #024e76);
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
 .checkbox-wrapper label::after {
     content: "";
     width: 14px;
     height: 6px;
-    border-left: 2px solid #024e76;
-    border-bottom: 2px solid #024e76;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     position: absolute;
     left: -26px;
     top: 1px;
@@ -218,7 +225,7 @@ header nav ul li a:hover {
 /* general section style start */
 .section-title {
     font-size: 48px;
-    color: #024e76;
+    color: var(--secondary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -231,7 +238,7 @@ header nav ul li a:hover {
 }
 
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 
 .text-left {
@@ -249,7 +256,7 @@ header nav ul li a:hover {
 /* What We Do Style Start */
 .intro p{
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--tertiary-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -272,11 +279,11 @@ header nav ul li a:hover {
 }
 
 .step:not(:last-child) {
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step h3 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
 }
@@ -302,14 +309,14 @@ header nav ul li a:hover {
 }
 
 .step-text p {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color: #024e76;
+    color: var(--secondary-color);
 }
 
 /* Meet the Trainers Style Start */
@@ -323,7 +330,7 @@ header nav ul li a:hover {
 
 .trainer {
     margin: 20px;
-    background: #024e76;
+    background: var(--secondary-color);
     color: #fce138;
     flex: 1;
 }
@@ -353,7 +360,7 @@ header nav ul li a:hover {
 
 /* Reach Out Style Start */
 .contact {
-    background: #024e76;
+    background: var(--secondary-color);
 }
 
 .contact h2 {
@@ -396,11 +403,11 @@ header nav ul li a:hover {
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -417,7 +424,7 @@ header nav ul li a:hover {
     width: 100%;
     border: none;
     background: #fce138;
-    color: #024e76;
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -425,7 +432,7 @@ header nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background: #39a6b2;
+    background: var(--tertiary-color);
     color: #fce138;
 }
 
@@ -440,7 +447,7 @@ footer {
 }
 
 footer h2 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
@@ -451,7 +458,7 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--secondary-color);
 }
 
 /* Media Queries */
